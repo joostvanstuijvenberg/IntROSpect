@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Service name:"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/serviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@layout/background_read_only"
+        android:textSize="24sp" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="3dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Provider:"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/serviceProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@layout/background_clickable"
+        android:textSize="24sp" />
+
+</LinearLayout>

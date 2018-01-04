@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- https://material.io/guidelines/patterns/errors.html#errors-user-input-errors -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start at IP-address:"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/startIPEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Start IP-address"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:padding="5dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/startIPError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End at IP-address:"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/endIPEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="End IP-address"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:padding="5dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/endIPError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:padding="5dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Found masters"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/foundMasters"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Start scanning"
+        android:padding="5dp"
+        android:textSize="24sp"/>
+
+</LinearLayout>

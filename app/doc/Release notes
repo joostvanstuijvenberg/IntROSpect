@@ -1,0 +1,23 @@
+1.0.0
+
+    - From the menu in the right upper corner on the master list, you can set the refresh rate.
+
+
+0.9.4
+
+    - From any detail screen, you can 'hop' to another detail screen in a different category. For
+      instance, on the node details page, you can click on a topic or service name and the app will
+      take you to the detail page of the item you clicked. Fields with this 'hyperlink' style are
+      colored light blue (but I'm thinking about making that color configurable ;-)
+    - Since the above mentioned functionality may lead to building up a very long trail, the Back
+      button now always brings you back to the master details page.
+
+0.9.3
+
+    - Now shows when the data is actually reloaded or (temporarily) not available, e.g. through
+      network issues. Made some layout changes, more or less as an experiment.
+
+0.9.2
+
+
+0.9.1

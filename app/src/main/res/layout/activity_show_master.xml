@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="100"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Host:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/masterHost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@layout/background_read_only"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Port:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/masterPort"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@layout/background_read_only"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Nodes:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/nodeCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:background="@layout/background_read_only"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Topics:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/topicCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:background="@layout/background_read_only"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Services:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/serviceCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="N/A"
+                    android:background="@layout/background_read_only"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/buttonNodes"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:text="Nodes"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonTopics"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:text="Topics"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonServices"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="5dp"
+            android:text="Services"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonGraph"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:enabled="false"
+            android:padding="5dp"
+            android:text="Graph"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

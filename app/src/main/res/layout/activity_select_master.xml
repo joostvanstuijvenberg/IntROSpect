@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/selectMasterToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent masters:"
+        android:padding="5dp"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/recentMastersListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonAddNewConnection"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Add new connection"
+        android:padding="5dp"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/buttonScanMasters"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Scan for ROS masters"
+        android:padding="5dp"
+        android:textSize="24sp"
+        android:enabled="false"/>
+
+</LinearLayout>

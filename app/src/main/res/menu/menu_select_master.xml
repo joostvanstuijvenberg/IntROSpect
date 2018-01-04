@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:id="@+id/action_clear"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Clear list"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Settings"
+        app:showAsAction="ifRoom"/>
+
+</menu>

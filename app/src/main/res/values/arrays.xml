@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="refresh_interval_entries">
+        <item>1 second</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+        <item>60 seconds</item>
+        <item>300 seconds</item>
+    </string-array>
+
+    <string-array name="refresh_interval_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>300</item>
+    </string-array>
+
+</resources>

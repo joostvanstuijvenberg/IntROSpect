@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- https://material.io/guidelines/patterns/errors.html#errors-user-input-errors -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="IP-address or host name:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/hostEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:padding="5dp"
+        android:background="@layout/background_editable"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/hostError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Port number:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/portEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="5dp"
+        android:text="@string/default_port_number"
+        android:background="@layout/background_editable"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/portError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:text="@string/connect"
+        android:textSize="24sp" />
+
+</LinearLayout>

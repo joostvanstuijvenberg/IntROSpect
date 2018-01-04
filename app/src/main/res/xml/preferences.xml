@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="pref_refresh_interval"
+        android:title="Refresh interval"
+        android:dialogTitle="Refresh interval in seconds"
+        android:summary="The time interval between attempts to refresh the ROS graph. Set this to a higher value for resource-constrained machines."
+        android:entries="@array/refresh_interval_entries"
+        android:entryValues="@array/refresh_interval_values"
+        android:defaultValue="10"/>
+</PreferenceScreen>
